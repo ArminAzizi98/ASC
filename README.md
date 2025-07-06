@@ -61,5 +61,6 @@ Find a way to write
 in terms of $p$ and $q.$''' \
   --steering
 ```
+You may provide any math problem as the `--problem` argument. 
 
 
