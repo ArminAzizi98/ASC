@@ -63,6 +63,17 @@ in terms of $p$ and $q.$''' \
 ```
 You may provide any math problem as the `--problem` argument. 
 
+
+
+## 🧭 Creating Steering Vectors
+
+To generate a steering vector for a new model or domain, follow these steps:
+
+1. **Generate Concise CoTs using GPT-4o**  
+   Requires access to the OpenAI ChatGPT API. This script prompts GPT-4o to produce math-centric, minimal-English rationales.
+   ```bash
+   python generate_short_cots.py
+   
 ## ✅ Supported Models
 
 The following models have been tested and are currently supported by ASC:
