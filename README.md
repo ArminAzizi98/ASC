@@ -73,6 +73,17 @@ To generate a steering vector for a new model or domain, follow these steps:
    Requires access to the OpenAI ChatGPT API. This script prompts GPT-4o to produce math-centric, minimal-English rationales.
    ```bash
    python generate_short_cots.py
+
+2. **Generate Verbose CoTs using the Target Model**
+   The following script generates standard chain-of-thought (CoT) outputs from your chosen reasoning model.
+   ```bash
+   python generate_long_cots.py
+
+3. **Extract the Steering Vector**
+   Use this script to compute the activation-space vector that maps verbose to concise reasoning, based on the CoT pairs.
+   ```bash
+   python extract_steering_vector.py
+
    
 ## ✅ Supported Models
 
