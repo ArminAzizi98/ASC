@@ -27,11 +27,17 @@ ASC addresses this inefficiency by:
 
 ## 📊 Results Summary
 
-| Model | Dataset | Accuracy (Δ) | Token Reduction |
-|-------|---------|---------------|-----------------|
-| DeepSeek-LLaMA-8B | MATH500 | ↔︎ (no drop) | ↓33.8% |
-| DeepSeek-Qwen-7B  | GSM8K   | ↔︎           | ↓67.43% |
-| QwQ-32B           | MATH500 | ↑ +0.4%      | ↓50.7% |
+### Performance Comparison: CoT vs. ASC
+
+| Model                          | Method | MATH500 Acc. (%) | MATH500 Tokens | GSM8K Acc. (%) | GSM8K Tokens |
+|-------------------------------|--------|------------------|----------------|----------------|--------------|
+| Deepseek-R1-Distill-Qwen-7B   | CoT    | 88.8             | 3984           | 88.6           | 1080         |
+|                               | ASC    | **89.0**         | **1543**       | 88.6           | **536**      |
+| Deepseek-R1-Distill-LLaMA-8B  | CoT    | 89.2             | 3554           | 89.1           | 2610         |
+|                               | ASC    | **89.2**         | **2353**       | **89.3**       | **850**      |
+| QwQ-32B                       | CoT    | 93.8             | 4508           | **96.5**       | 1530         |
+|                               | ASC    | 94.2             | **2222**       | 96.4           | **830**      |
+
 
 ## 🛠️ Setup
 
