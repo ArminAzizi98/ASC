@@ -63,4 +63,13 @@ in terms of $p$ and $q.$''' \
 ```
 You may provide any math problem as the `--problem` argument. 
 
+## ✅ Supported Models
+
+The following models have been tested and are currently supported by ASC:
+
+- `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`
+- `deepseek-ai/DeepSeek-R1-Distill-Llama-8B`
+- `Qwen/QwQ-32B`
+
+> ℹ️ More models will be added soon. Contributions are welcome!
 
