@@ -45,3 +45,18 @@ ASC addresses this inefficiency by:
 git clone https://github.com/your-username/ASC.git
 cd ASC
 pip install -r requirements.txt
+
+
+## 🧪 Inference Example
+
+The easiest way to use ASC during inference is with the `--steering` flag:
+
+```bash
+python -u generate.py \
+  --model_name "Qwen/QwQ-32B" \
+  --problem '''Define
+\[p = \sum_{k = 1}^\infty \frac{1}{k^2} \quad \text{and} \quad q = \sum_{k = 1}^\infty \frac{1}{k^3}.\]
+Find a way to write
+\[\sum_{j = 1}^\infty \sum_{k = 1}^\infty \frac{1}{(j + k)^3}\]
+in terms of $p$ and $q.$''' \
+  --steering
