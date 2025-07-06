@@ -45,7 +45,7 @@ ASC addresses this inefficiency by:
 git clone https://github.com/your-username/ASC.git
 cd ASC
 pip install -r requirements.txt
-
+```
 
 ## 🧪 Inference Example
 
@@ -60,3 +60,6 @@ Find a way to write
 \[\sum_{j = 1}^\infty \sum_{k = 1}^\infty \frac{1}{(j + k)^3}\]
 in terms of $p$ and $q.$''' \
   --steering
+```
+
+
