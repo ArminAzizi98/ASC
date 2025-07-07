@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# math500_to_gpt4_v1.py  – works with  openai>=1.0.0
-
 import os, json, time, random, pathlib
 from datasets import load_dataset, concatenate_datasets
 import openai
